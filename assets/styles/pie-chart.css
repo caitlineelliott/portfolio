@@ -1,60 +1,3 @@
-.body-container {
-    width: 100%;
-    margin: 50px 0;
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-
-.left-pie,
-.right-pie {
-    z-index: 2;
-}
-
-.left-pie {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-.right-pie {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.pie-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.pie-chart {
-    min-width: 500px;
-    min-height: 500px;
-    width: 35vw; 
-    height: 35vw;
-    border-radius: 50%;
-    background: var(--green);
-    background-image:
-    linear-gradient(to right, transparent 50%, var(--beige) 0);
-    border: 3px solid var(--black);
-    box-shadow: 1px 1px 0px 0px var(--black), 2px 2px 0px 0px var(--black), 3px 3px 0px 0px var(--black), 4px 4px 0px 0px var(--black), 5px 5px 0px 0px var(--black);
-  }
-  
-  .pie-chart::before {
-    content: "";
-    display: block;
-    margin-left: 50%;
-    height: 100%;
-    border-radius: 0 100% 100% 0 / 50%;
-    background: var(--beige);
-    transform-origin: left;
-    transform: rotate(.1turn);
-  }
-
-/* TOOLTIPS */
-
 .expandable-container {
     width: 25vw;
     border-radius: 20px;
@@ -86,7 +29,7 @@
     display: flex;
     gap: 10px;
     align-items: center;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .tooltip-icon {
@@ -131,6 +74,113 @@
     flex-direction: column-reverse;
 }
 
+.pie-chart {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background: conic-gradient(var(--green) 40%, var(--beige) 0);
+    border: 3px solid var(--black);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    box-shadow: 1px 1px 0px 0px var(--black), 2px 2px 0px 0px var(--black), 3px 3px 0px 0px var(--black), 4px 4px 0px 0px var(--black), 5px 5px 0px 0px var(--black);
+  }
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.left-pie,
+.right-pie {
+    z-index: 2;
+}
+
+.expandable-container {
+    min-width: 250px;
+}
+
+/* 
+
+/*
+
+
+.left-pie,
+.right-pie {
+    z-index: 2;
+}
+
+
+.pie-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+  .body-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.left-pie {
+    position: initial;
+}
+
+.right-pie {
+    position: initial;
+} */
+
+/* .body-container {
+    width: 100%;
+    margin: 50px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.pie-chart {
+    min-width: 500px;
+    min-height: 500px;
+    width: 35vw; 
+    height: 35vw;
+    border-radius: 50%;
+    background: var(--green);
+    background-image:
+    linear-gradient(to right, transparent 50%, var(--beige) 0);
+    border: 3px solid var(--black);
+    box-shadow: 1px 1px 0px 0px var(--black), 2px 2px 0px 0px var(--black), 3px 3px 0px 0px var(--black), 4px 4px 0px 0px var(--black), 5px 5px 0px 0px var(--black);
+  }
+  
+  .pie-chart::before {
+    content: "";
+    display: block;
+    margin-left: 50%;
+    height: 100%;
+    border-radius: 0 100% 100% 0 / 50%;
+    background: var(--beige);
+    transform-origin: left;
+    transform: rotate(.1turn);
+  }
+
+/* TOOLTIPS */
+
+
+
+/*
+
 
 @media screen and (max-width: 480px) {
     .body-container {
@@ -165,7 +215,9 @@
   }
 
 
-@media screen and (min-width: 431px) and (max-width: 768px) {
+ */
+
+ @media screen and (min-width: 431px) and (max-width: 768px) {
     .left-pie {
         position: absolute;
         bottom: -50px;

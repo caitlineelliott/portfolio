@@ -3,8 +3,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px 250px;
+    padding: 40px;
     background-attachment: fixed;
+    box-sizing: border-box;
 }
 
 .section > .container {
@@ -12,17 +13,11 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    min-width: 350px;
+    box-sizing: border-box;
 }
 
-.section#contact {
-    padding: 50px 250px 0px 250px;
-    height: 100%;
-    gap: 200px;
-}
-
-#contact > .container {
-    gap: 50px;
+.section#portfolio {
+    padding: 40px;
 }
 
 #services .container,
@@ -47,7 +42,7 @@
     flex: 1;
     display: flex;
     align-items: center;
-    min-width: 350px;
+    min-width: 300px;
 }
 
 #services {
@@ -65,7 +60,6 @@
 
 #testimonials {
     background: url('../imgs/cubes.png');
-
     background-attachment: fixed;
 }
 
@@ -75,26 +69,16 @@
     background-attachment: fixed;
 }
 
-@media screen and (max-width: 480px) {
-    .section {
-        padding: 50px;
-    }
-
-    .section#contact {
-        padding: 50px 150px 0px 150px;
-        height: 100%;
-    }
-
-    #contact > .container {
-        flex-direction: column-reverse;
-    }
-
-    #contact {
-        background-position-x: 10%;
-    }
+#contact > .container {
+    flex-direction: column-reverse;
+    gap: 50px;
 }
 
-@media screen and (max-width: 1366px) {
+.section#contact {
+    padding: 50px 50px 0 50px;
+}
+
+@media screen and (min-width: 481px) and (max-width: 1366px) {
     .section {
         padding: 50px;
     }
@@ -110,5 +94,6 @@
 
     .contact-btns {
         flex-direction: column;
+        flex-wrap: wrap;
     }
 }

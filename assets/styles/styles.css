@@ -1,11 +1,40 @@
 @import url('./base.css');
 @import url('./buttons.css');
-@import url('./cards.css');
 @import url('./nav.css');
 @import url('./section.css');
+@import url('./cards.css');
 @import url('./testimonials.css');
 @import url('./header.css');
 @import url('./pie-chart.css');
+
+.company-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 40px 0;
+    gap: 20px;
+}
+
+.company-logos > * {
+    height: 4vh;
+    object-fit: contain;
+    filter: grayscale(100%) invert(0.5) contrast(1);
+}
+
+.headshot-container {
+    max-width: 20vw;
+    min-width: 325px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.headshot {
+    border-radius: 500px 500px 0 0;
+    box-shadow: -20px 0 0 var(--brown);
+    width: 100%;
+}
 
 .about-txt {
     font-size: 1.5em;
@@ -71,20 +100,6 @@
     width: 22px;
 }
 
-.headshot-container {
-    max-width: 28vw;
-    min-width: 400px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.headshot {
-    border-radius: 500px 500px 0 0;
-    box-shadow: -20px 0 0 var(--brown);
-    width: 100%;
-}
-
 .contact-container > h2 {
     margin: 20px;
 }
@@ -96,9 +111,11 @@
     align-items: center;
 }
 
+
 .contact-btns {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     gap: 20px;
 }
@@ -110,11 +127,5 @@ footer {
     align-items: center;
     background-color: var(--green);
     color: var(--white);
+    padding: 20px;
 }
-
-@media screen and (max-width: 480px) {
-    .headshot-container {
-        min-width: 350px;
-        margin-left: 10px;
-    }
-  }

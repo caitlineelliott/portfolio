@@ -46,7 +46,6 @@ button:active {
 }
 
 .expand-btn {
-    width: 2.5vw;
     min-width: 2vw;
     padding: 0;
 }

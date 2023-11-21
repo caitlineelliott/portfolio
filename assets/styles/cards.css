@@ -4,8 +4,14 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 100%;
     margin: 20px 0;
+    border: 1px solid blue;
+}
+
+video {
+    height: inherit;
+    width: 100%;
 }
 
 .project-description p,
@@ -54,8 +60,8 @@ li {
 
 .card {
     background-color: var(--light-beige);
-    min-width: 33vw;
-    width: 100%;
+    min-width: 66vw;
+    /* width: 100%; */
     padding: 20px;
     border-radius: 16px;
     margin-right: 20px;
@@ -79,12 +85,6 @@ li {
     gap: 30px;
 }
 
-video {
-    height: inherit;
-    width: 100%;
-}
-
-
 video:hover {
     cursor: pointer;
 }
@@ -104,6 +104,17 @@ video:hover {
 .right-navigation {
     display: none;
 }
+
+
+/* 
+
+
+
+
+video:hover {
+    cursor: pointer;
+}
+
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .left-navigation,
@@ -160,4 +171,4 @@ video:hover {
         display: flex;
         padding: 20px;
     }
-}
+} */
