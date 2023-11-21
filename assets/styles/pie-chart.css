@@ -253,3 +253,28 @@
         min-width: 50px;
     }
   }
+
+  @media screen and (min-width: 1301px) {
+    .pie-chart {
+        width: 35vw;
+        height: 35vw;
+    }
+
+    .body-container {
+        flex-direction: row;
+        position: relative;
+       width: 100%;
+    }
+
+    .left-pie {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .right-pie {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}

@@ -97,3 +97,9 @@
         flex-wrap: wrap;
     }
 }
+
+@media screen and (min-width: 1367px) {
+    .section {
+        padding: 50px 250px;
+    }
+}
