@@ -6,7 +6,6 @@
     align-items: center;
     width: 100%;
     margin: 20px 0;
-    border: 1px solid blue;
 }
 
 video {
@@ -24,7 +23,6 @@ li {
     font-weight: 700;
     color: var(--green);
 }
-
 
 .dots {
     display: flex;
@@ -105,36 +103,38 @@ video:hover {
     display: none;
 }
 
-
-/* 
-
-
-
-
-video:hover {
-    cursor: pointer;
+.mobile-slide-btns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
 }
 
+@media screen and (min-width: 480px) {
+    .mobile-slide-btns {
+        display: none;
+    }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
     .left-navigation,
     .right-navigation {
         display: flex;
     }
+}
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     .card {
         min-width: 65vw;
     }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1365px) {
-    .left-navigation,
-    .right-navigation {
-        display: flex;
+    .card-container {
+        gap: 20px;
     }
 
     .card {
-        min-width: 50vw;
+        min-width: 47vw;
     }
 
     .card-container {
@@ -143,13 +143,10 @@ video:hover {
 }
 
 @media screen and (min-width: 1366px) and (max-width: 1400px) {
-    .left-navigation,
-    .right-navigation {
-        display: flex;
-    }
+
 
     .card {
-        min-width: 34vw;
+        min-width: 40vw;
         padding: 40px;
         display: flex;
         justify-content: center;
@@ -165,10 +162,20 @@ video:hover {
     }
 }
 
-@media screen and (min-width: 1401px) {
-    .left-navigation,
-    .right-navigation {
+@media screen and (min-width: 1400px) {
+    .card {
+        min-width: 28vw;
+        padding: 40px;
         display: flex;
-        padding: 20px;
+        justify-content: center;
+        align-items: flex-start;
     }
-} */
+
+    .project-info {
+        width: 95%;
+    }
+
+    .card-container {
+        width: 50%;
+    }
+}
