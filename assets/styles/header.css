@@ -43,8 +43,9 @@ header {
     }
 
     header {
-        background-size: 170%;
+        background-image: url('../imgs/mobile-header.jpg');
         background-position-y: 10%;
+        background-size: 110%;
         align-items: flex-end;
         position: relative;
     }
