@@ -5,6 +5,7 @@
     align-items: center;
     padding: 40px;
     box-sizing: border-box;
+    background-attachment: scroll;
 }
 
 .section > .container {
@@ -29,7 +30,6 @@
 #about {
     min-height: 50vh;
     background-color: var(--black);
-    background-attachment: fixed;
     background-image: url('../imgs/mesh\ gradient.png');
 }
 
@@ -48,7 +48,6 @@
 #services {
     min-height: 75vh;
     background-image: url('../imgs/waves-gradient.png');
-    background-attachment: fixed;
 }
 
 #portfolio {
@@ -56,18 +55,15 @@
     background-color: var(--light-green);
     background: url('../imgs/cubes.png');
     background: url('../imgs/mesh-gradient2.png');
-    background-attachment: fixed;
 }
 
 #testimonials {
     background: url('../imgs/cubes.png');
-    background-attachment: fixed;
 }
 
 #contact {
     background: url('../imgs/patchwork-bg.png');
     background-position-x: 100%;
-    background-attachment: fixed;
 }
 
 #contact > .container {
@@ -102,5 +98,6 @@
 @media screen and (min-width: 1367px) {
     .section {
         padding: 50px 250px;
+        background-attachment: fixed;
     }
 }
