@@ -163,6 +163,10 @@ video:hover {
 }
 
 @media screen and (min-width: 1400px) {
+    .card-container {
+        gap: 20px;
+    }
+    
     .card {
         min-width: 28vw;
         padding: 40px;
