@@ -1,0 +1,163 @@
+.card-container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 20px 0;
+}
+
+.project-description p,
+ul, 
+li {
+    color: var(--black);
+}
+
+.project-description span {
+    font-weight: 700;
+    color: var(--green);
+}
+
+
+.dots {
+    display: flex;
+}
+
+.dot {
+    width: 16px;
+    height: 16px;
+    background-color: var(--beige);
+    border-radius: 50%;
+    margin: 8px;
+}
+
+.active-dot {
+    background-color: var(--light-brown);
+}
+
+.carousel {
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.cards {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.cards.sliding-transition {
+    transition: transform 700ms ease-in-out;
+}
+
+.card {
+    background-color: var(--light-beige);
+    min-width: 33vw;
+    width: 100%;
+    padding: 20px;
+    border-radius: 16px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 3px solid var(--black);
+    box-shadow: 1px 1px 0px 0px var(--black), 2px 2px 0px 0px var(--black), 3px 3px 0px 0px var(--black), 4px 4px 0px 0px var(--black), 5px 5px 0px 0px var(--black);
+}
+
+.card h3 {
+    color: var(--green);
+}
+
+.card h3 {
+    color: var(--green);
+}
+
+.card-body {
+    display: flex;
+    gap: 30px;
+}
+
+video {
+    height: inherit;
+    width: 100%;
+}
+
+
+video:hover {
+    cursor: pointer;
+}
+
+.project-info {
+    background-color: var(--beige);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.left-navigation,
+.right-navigation {
+    display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .left-navigation,
+    .right-navigation {
+        display: flex;
+    }
+
+    .card {
+        min-width: 65vw;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+    .left-navigation,
+    .right-navigation {
+        display: flex;
+    }
+
+    .card {
+        min-width: 50vw;
+    }
+
+    .card-container {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1400px) {
+    .left-navigation,
+    .right-navigation {
+        display: flex;
+    }
+
+    .card {
+        min-width: 34vw;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .project-info {
+        width: 95%;
+    }
+
+    .card-container {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 1401px) {
+    .left-navigation,
+    .right-navigation {
+        display: flex;
+        padding: 20px;
+    }
+}

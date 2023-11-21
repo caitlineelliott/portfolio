@@ -1,0 +1,67 @@
+button {
+    font-family: 'DM Sans';
+    font-size: 16px;
+    padding: 0;
+    min-width: 175px;
+    margin: 0;
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-weight: 700;
+    border: 3px solid var(--black);
+    box-shadow: 1px 1px 0px 0px var(--black), 2px 2px 0px 0px var(--black), 3px 3px 0px 0px var(--black), 4px 4px 0px 0px var(--black), 5px 5px 0px 0px var(--black);
+}
+
+button:hover {
+    background-color: var(--light-green);
+    cursor: pointer;
+}
+
+button:active {
+    background-color: var(--medium-green);
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0px 0px var(--black), 2px 2px 0px 0px var(--black);
+    top: 5px;
+    left: 5px;
+}
+
+.btn-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.active-section-btn {
+    background-color: var(--medium-brown);
+}
+
+.active-section-btn:hover {
+    background-color: var(--light-brown);
+}
+
+.active-section-btn:active {
+    background-color: var(--brown);
+}
+
+.expand-btn {
+    width: 2.5vw;
+    min-width: 2vw;
+    padding: 0;
+}
+
+.left-slide, 
+.right-slide {
+    width: 6vw;
+    height: 6vw;
+    padding: 0;
+}
+
+@media screen and (min-width: 1367px) {
+    .left-slide, 
+    .right-slide {
+        width: 4vw;
+        height: 4vw;
+    }
+}

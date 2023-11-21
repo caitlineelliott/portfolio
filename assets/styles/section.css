@@ -1,0 +1,114 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 250px;
+    background-attachment: fixed;
+}
+
+.section > .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 350px;
+}
+
+.section#contact {
+    padding: 50px 250px 0px 250px;
+    height: 100%;
+    gap: 200px;
+}
+
+#contact > .container {
+    gap: 50px;
+}
+
+#services .container,
+#portfolio .container,
+#testimonials .container {
+    flex-direction: column;
+    align-items: center;
+}
+
+#about {
+    min-height: 50vh;
+    background-color: var(--black);
+    background-image: url('../imgs/mesh\ gradient.png');
+}
+
+#about .container {
+    gap: 2vw;
+}
+
+#about .left,
+#about .right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    min-width: 350px;
+}
+
+#services {
+    min-height: 75vh;
+    background-image: url('../imgs/waves-gradient.png');
+}
+
+#portfolio {
+    min-height: 75vh;
+    background-color: var(--light-green);
+    background: url('../imgs/cubes.png');
+    background: url('../imgs/mesh-gradient2.png');
+    background-attachment: fixed;
+}
+
+#testimonials {
+    background: url('../imgs/cubes.png');
+
+    background-attachment: fixed;
+}
+
+#contact {
+    background: url('../imgs/patchwork-bg.png');
+    background-position-x: 100%;
+    background-attachment: fixed;
+}
+
+@media screen and (max-width: 480px) {
+    .section {
+        padding: 50px;
+    }
+
+    .section#contact {
+        padding: 50px 150px 0px 150px;
+        height: 100%;
+    }
+
+    #contact > .container {
+        flex-direction: column-reverse;
+    }
+
+    #contact {
+        background-position-x: 10%;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .section {
+        padding: 50px;
+    }
+
+    #contact > .container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #contact {
+        background-position-x: 10%;
+    }
+
+    .contact-btns {
+        flex-direction: column;
+    }
+}

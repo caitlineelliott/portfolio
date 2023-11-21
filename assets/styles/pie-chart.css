@@ -1,0 +1,203 @@
+.body-container {
+    width: 100%;
+    margin: 50px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.left-pie,
+.right-pie {
+    z-index: 2;
+}
+
+.left-pie {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.right-pie {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.pie-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pie-chart {
+    min-width: 500px;
+    min-height: 500px;
+    width: 35vw; 
+    height: 35vw;
+    border-radius: 50%;
+    background: var(--green);
+    background-image:
+    linear-gradient(to right, transparent 50%, var(--beige) 0);
+    border: 3px solid var(--black);
+    box-shadow: 1px 1px 0px 0px var(--black), 2px 2px 0px 0px var(--black), 3px 3px 0px 0px var(--black), 4px 4px 0px 0px var(--black), 5px 5px 0px 0px var(--black);
+  }
+  
+  .pie-chart::before {
+    content: "";
+    display: block;
+    margin-left: 50%;
+    height: 100%;
+    border-radius: 0 100% 100% 0 / 50%;
+    background: var(--beige);
+    transform-origin: left;
+    transform: rotate(.1turn);
+  }
+
+/* TOOLTIPS */
+
+.expandable-container {
+    width: 25vw;
+    border-radius: 20px;
+    border: 3px solid var(--black);
+    background-color: var(--beige);
+    box-shadow: 1px 1px 0px 0px var(--black), 2px 2px 0px 0px var(--black), 3px 3px 0px 0px var(--black), 4px 4px 0px 0px var(--black), 5px 5px 0px 0px var(--black);
+}
+
+.expandable {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: all 0.5s ease;
+}
+
+.expandable > div {
+    overflow: hidden;
+}
+
+.tooltip-header {
+    padding: 15px;
+    height: 4vh;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--light-beige);
+}
+
+.tooltip-title {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 24px;
+}
+
+.tooltip-icon {
+    font-size: 30px !important;
+    color: var(--green);
+}
+
+.expand-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.expandable p {
+    font-size: 1.1em;
+    color: var(--black);
+}
+
+.stack-label {
+    font-weight: 700;
+    color: var(--green);
+}
+
+.designer-tooltip-body {
+    border-radius: 0 0 20px 20px;
+    padding: 0 20px;
+    background-color: var(--beige);
+}
+
+.developer-tooltip-body {
+    padding: 0 20px;
+    border-radius: 0 0 20px 20px;
+    background-color: var(--beige);
+}
+
+.big {
+    grid-template-rows: 1fr;
+}
+
+.expand-up {
+    flex-direction: column-reverse;
+}
+
+
+@media screen and (max-width: 480px) {
+    .body-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .pie-chart {
+        min-width: 300px;
+        min-height: 300px;
+    }
+
+    .left-pie {
+        position: initial;
+    }
+
+    .right-pie {
+        position: initial;
+    }
+    
+    .expandable-container {
+        min-width: 300px;
+    }
+
+    .expand-btn {
+        min-width: 50px;
+    }
+  }
+
+
+@media screen and (min-width: 431px) and (max-width: 768px) {
+    .left-pie {
+        position: absolute;
+        bottom: -50px;
+        left: 0;
+    }
+    
+    .expandable-container {
+        min-width: 300px;
+    }
+
+    .expand-btn {
+        min-width: 50px;
+    }
+  }
+
+
+  @media screen and (min-width: 768px) and (max-width:1024px) {
+    .expandable-container {
+        min-width: 300px;
+    }
+
+    .expand-btn {
+        min-width: 30px;
+    }
+  }
+
+
+@media screen and (min-width: 1025px) and (max-width: 1300px) {
+    .expandable-container {
+        min-width: 400px;
+    }
+    .expand-btn {
+        min-width: 50px;
+    }
+  }

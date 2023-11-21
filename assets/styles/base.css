@@ -1,0 +1,87 @@
+:root {
+    --white: #eeeff1;
+    --light-beige: #b8b4ab;
+    --beige: #A09D95;
+
+    --green: #485949;
+    --light-green: #566b57;
+    --sage: #8aa18b;
+    --medium-green: #3a4743;
+
+    --black: #29303A;
+    --greenblack: #2c353c;
+
+    --brown: #634b3f;
+    --medium-brown: #99725d;
+    --light-brown: #ab8068;
+    font-family: 'DM Sans';
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+} 
+
+body {
+    margin: 0;
+    background-color: var(--green);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    margin: 1em 0;
+    padding: 0;
+    font-family: 'DM Sans';
+    font-size: 1em;
+    color: var(--white);
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500;
+}
+
+
+h1 {
+    margin: 0;
+    font-family: 'Playfair Display';
+    font-size: 100px;
+    color: var(--green);
+}
+
+h2 {
+    margin: 0;
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-size: 3em;
+    color: var(--white);
+}
+
+h3 {
+    margin: 0;
+    color: var(--white);
+    font-size: 1.75em;
+}
+
+h4 {
+    margin: 0;
+}
+
+hr {
+    width: 80%;
+    background-color: var(--beige);
+    border-radius: 4px;
+    border: none;
+    height: 3px;
+}
+
+@media screen and (max-width: 1024px) {
+    hr {
+        width: 50%;
+    }
+}

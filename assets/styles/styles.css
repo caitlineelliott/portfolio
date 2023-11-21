@@ -1,0 +1,120 @@
+@import url('./base.css');
+@import url('./buttons.css');
+@import url('./cards.css');
+@import url('./nav.css');
+@import url('./section.css');
+@import url('./testimonials.css');
+@import url('./header.css');
+@import url('./pie-chart.css');
+
+.about-txt {
+    font-size: 1.5em;
+}
+
+.profile-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile-right > p {
+    color: var(--white);
+    font-size: 22px;
+} 
+
+.btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* what i do */
+.company-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 40px 0;
+    gap: 20px;
+}
+
+.company-logos > * {
+    height: 4.5vh;
+    object-fit: contain;
+    filter: grayscale(100%) invert(0.5) contrast(1);
+}
+
+.content .card-header {
+    align-items: flex-start;
+}
+
+.container > h2 {
+    color: var(--white);
+    text-align: center;
+}
+
+.btns-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 500;
+    gap: 20px;
+}
+
+.linkedin-logo {
+    width: 22px;
+}
+
+.headshot-container {
+    max-width: 28vw;
+    min-width: 400px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.headshot {
+    border-radius: 500px 500px 0 0;
+    box-shadow: -20px 0 0 var(--brown);
+    width: 100%;
+}
+
+.contact-container > h2 {
+    margin: 20px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+footer {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green);
+    color: var(--white);
+}
+
+@media screen and (max-width: 480px) {
+    .headshot-container {
+        min-width: 350px;
+        margin-left: 10px;
+    }
+  }
