@@ -217,13 +217,7 @@
 
  */
 
- @media screen and (min-width: 431px) and (max-width: 768px) {
-    .left-pie {
-        position: absolute;
-        bottom: -50px;
-        left: 0;
-    }
-    
+ @media screen and (min-width: 431px) and (max-width: 768px) {    
     .expandable-container {
         min-width: 300px;
     }
