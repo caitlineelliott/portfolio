@@ -43,7 +43,8 @@ header {
     }
 
     header {
-        background-position-x: 25%;
+        background-position: 25%;
+        background-attachment: fixed;
         align-items: flex-end;
         position: relative;
     }
