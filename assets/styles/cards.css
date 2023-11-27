@@ -11,6 +11,7 @@
 video {
     height: inherit;
     width: 100%;
+    background-color: var(--black);
 }
 
 .project-description p,
