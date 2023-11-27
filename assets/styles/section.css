@@ -101,7 +101,9 @@
     }
 
 
-    #portfolio {
+    #portfolio,
+    #contact,
+    #testimonials {
         background-attachment: fixed;
     }
 }
