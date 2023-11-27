@@ -12,6 +12,7 @@ navIcon.addEventListener('click', () => {
 // On mobile, collapse nav bar on link click
 navAnchorTags.forEach(link => link.addEventListener('click', () => {
     if (window.innerWidth <= 480) {
+        navIcon.classList.toggle('open');
         navLinksContainer.classList.remove('show');
     } 
 }))
