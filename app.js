@@ -166,3 +166,11 @@ leftButton.addEventListener("click", handleSwipeBackward)
 rightButton.addEventListener("click", handleSwipeForward)
 mobileLeftButton.addEventListener("click", handleSwipeBackward)
 mobileRightButton.addEventListener("click", handleSwipeForward)
+
+document.addEventListener("DOMContentLoaded", (event) => {
+    const loadingContainer = document.querySelector('.loading')
+
+    setTimeout(() => {
+        loadingContainer.style.display = "none"
+    }, 500)
+});

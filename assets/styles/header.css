@@ -8,6 +8,17 @@ header {
     align-items: center;
 }
 
+.loading {
+    background-color: var(--sage);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    transition: transform 700ms ease-in-out;
+    z-index: 2000;
+    position: fixed;
+}
+
 .header-container {
     min-width: 350px;
     padding: 20px 50px;
