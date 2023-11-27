@@ -1,3 +1,17 @@
+// document.onreadystatechange = function () {
+//     const loadingContainer = document.querySelector('.loading')
+
+//     if (document.readyState !== "complete") {
+//        document.querySelector("body").style.visibility = "hidden";
+//        loadingContainer.style.visibility = "visible";
+//     } else {
+//        setTimeout(() => {
+//           loadingContainer.style.display ="none";
+//           document.querySelector("body").style.visibility = "visible";
+//        }, 300)
+//     }
+//  };
+
 const navIcon = document.querySelector('#navIcon');
 const navIconBars = document.querySelectorAll('#navIcon > span');
 const navAnchorTags = document.querySelectorAll('.links > a');
@@ -170,10 +184,10 @@ rightButton.addEventListener("click", handleSwipeForward)
 mobileLeftButton.addEventListener("click", handleSwipeBackward)
 mobileRightButton.addEventListener("click", handleSwipeForward)
 
-document.addEventListener("DOMContentLoaded", (event) => {
+window.onload = () => {
     const loadingContainer = document.querySelector('.loading')
-
+    console.log('test')
     setTimeout(() => {
         loadingContainer.style.display = "none"
     }, 500)
-});
+}
