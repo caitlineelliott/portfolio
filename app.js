@@ -16,52 +16,6 @@ navAnchorTags.forEach(link => link.addEventListener('click', () => {
     } 
 }))
 
-// Nav bars intersection observer
-let navBarsOptions = {
-    rootMargin: "-50px 0px -90% 0px",
-    threshold: 0,
-  };
-
-const onNavBarsIntersect = (entries, observer) => {
-    for (let i = 0; i < entries.length; i++) {
-        if (entries[i].isIntersecting) {
-            if (entries[i].target.classList.contains('dark')) {
-                navIconBars.forEach(bar => bar.classList.add('light-nav'))
-            } else {
-                navIconBars.forEach(bar => bar.classList.remove('light-nav'))
-            }
-        }
-    }
-} 
-
-let navBarsObserver = new IntersectionObserver(onNavBarsIntersect, navBarsOptions);
-
-// Nav links intersection observer
-
-let options = {
-    rootMargin: "0px",
-    threshold: 0.5,
-  };
-
-
-const onIntersect = (entries, observer) => {
-    for (let i = 0; i < entries.length; i++) {
-        let link = document.querySelector(`[href="#${entries[i].target.id}"]`)
-        if (entries[i].isIntersecting) {
-            link.children[0].classList.add('active-section-btn');
-        } else {
-            link.children[0].classList.remove('active-section-btn')
-        }
-    }
-} 
-
-let observer = new IntersectionObserver(onIntersect, options);
-
-sections.forEach(section => {
-    navBarsObserver.observe(section);
-    observer.observe(section)
-})
-
 const expand = (type) => {
     if (type === 'designer') {
         const tooltip = document.querySelector('#designer-tooltip');
