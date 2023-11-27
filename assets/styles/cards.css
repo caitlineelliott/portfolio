@@ -12,6 +12,12 @@ video {
     height: inherit;
     width: 100%;
     background-color: var(--black);
+    border-radius: 20px;
+}
+
+#altoDriverVideo,
+#altoShiftSchedules {
+    background-image: url('../imgs/alto.webp');
 }
 
 .project-description p,
