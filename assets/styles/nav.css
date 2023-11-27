@@ -24,6 +24,8 @@
   transition: .5s ease-in-out;
   cursor: pointer;
   z-index: 1000;
+  background-color: transparent;
+  border: none;
 }
   
 #navIcon span {
@@ -45,10 +47,6 @@
   transition: .25s ease-in-out;
 }
 
-.light-nav {
-  background: var(--white) !important;
-}
-  
 #navIcon span:nth-child(1) {
   top: 10px;
 }
@@ -97,7 +95,7 @@
   bottom: 0px;
   width: 10vw;
   right: -50vw;
-  padding: 100px 30px 30px 30px;
+  padding: 100px 50px;
   z-index: 0;
   gap: 20px; 
 }

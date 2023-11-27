@@ -3,6 +3,7 @@ const navIconBars = document.querySelectorAll('#navIcon > span');
 const navAnchorTags = document.querySelectorAll('.links > a');
 const navLinksContainer = document.querySelector('.links');
 const sections = document.querySelectorAll('.section');
+const aboutHeading = document.querySelector('#about h2');
 
 navIcon.addEventListener('click', () => {
     navIcon.classList.toggle('open');
@@ -16,6 +17,53 @@ navAnchorTags.forEach(link => link.addEventListener('click', () => {
         navLinksContainer.classList.remove('show');
     } 
 }))
+
+navIcon.addEventListener('keydown', (e) => {
+    if (e.keyCode === 9) {
+        navIcon.classList.toggle('open');
+        navLinksContainer.classList.toggle('show');
+    }
+})
+
+navAnchorTags[navAnchorTags.length - 1].addEventListener('keydown', (e) => {
+    if (e.shiftKey) {
+        return;
+    } else if (e.keyCode === 9) {
+        navIcon.classList.toggle('open');
+        navLinksContainer.classList.toggle('show');
+    }
+})
+
+aboutHeading.addEventListener('keydown', (e) => {
+    if(e.shiftKey && e.keyCode == 9) { 
+        navIcon.classList.toggle('open');
+        navLinksContainer.classList.toggle('show');
+    }
+})
+
+// Nav links intersection observer
+let options = {
+    rootMargin: "0px",
+    threshold: 0.5,
+  };
+
+
+const onIntersect = (entries, observer) => {
+    for (let i = 0; i < entries.length; i++) {
+        let link = document.querySelector(`[href="#${entries[i].target.id}"]`)
+        if (entries[i].isIntersecting) {
+            link.children[0].classList.add('active-section-btn');
+        } else {
+            link.children[0].classList.remove('active-section-btn')
+        }
+    }
+} 
+
+let observer = new IntersectionObserver(onIntersect, options);
+
+sections.forEach(section => {
+    observer.observe(section)
+})
 
 const expand = (type) => {
     if (type === 'designer') {

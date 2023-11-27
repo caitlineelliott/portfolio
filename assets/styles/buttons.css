@@ -1,4 +1,4 @@
-button {
+.button {
     font-family: 'DM Sans';
     font-size: 16px;
     padding: 0;
@@ -14,12 +14,12 @@ button {
     box-shadow: 1px 1px 0px 0px var(--black), 2px 2px 0px 0px var(--black), 3px 3px 0px 0px var(--black), 4px 4px 0px 0px var(--black), 5px 5px 0px 0px var(--black);
 }
 
-button:hover {
+.button:hover {
     background-color: var(--light-green);
     cursor: pointer;
 }
 
-button:active {
+.button:active {
     background-color: var(--medium-green);
     transform: translate(2px, 2px);
     box-shadow: 1px 1px 0px 0px var(--black), 2px 2px 0px 0px var(--black);

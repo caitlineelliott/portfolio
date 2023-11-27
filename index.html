@@ -81,78 +81,78 @@
         </div>
         <!-- Loading Animation End -->
 
-        <div class="nav" tabindex="0">
-            <div id="navIcon">
+        <div class="nav">
+            <button id="navIcon" tabindex="0">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
 
             <div class="links">
                 <a href="#header">
-                    <button>
+                    <div class="button">
                         <div class="btn-label">
                             <span class="material-symbols-outlined">
                                 home
                             </span>
                             Home
                         </div>
-                    </button>
+                    </div>
                 </a>
 
                 <a href="#about">
-                    <button>
+                    <div class="button">
                         <div class="btn-label">
                             <span class="material-symbols-outlined">
                                 person
                             </span>
                             About
                         </div>
-                    </button>
+                    </div>
                 </a>
 
                 <a href="#services">
-                    <button>
+                    <div class="button">
                         <div class="btn-label">
                             <span class="material-symbols-outlined">
                                 devices
                             </span>
                             What I Do
                         </div>
-                    </button>
+                    </div>
                 </a>
 
                 <a href="#portfolio">
-                    <button>
+                    <div class="button">
                         <div class="btn-label">
                             <span class="material-symbols-outlined">
                                 atr
                             </span>
                             Portfolio
                         </div>
-                    </button>
+                    </div>
                 </a>
 
                 <a href="#testimonials">
-                    <button>
+                    <div class="button">
                         <div class="btn-label">
                             <span class="material-symbols-outlined">
                                 comment
                             </span>
                             Testimonials
                         </div>
-                    </button>
+                    </div>
                 </a>
 
                 <a href="#contact">
-                    <button>
+                    <div class="button">
                         <div class="btn-label">
                             <span class="material-symbols-outlined">
                                 send
                             </span>
                             Contact
                         </div>
-                    </button>
+                    </div>
                 </a>         
             </div>
         </div>
@@ -188,7 +188,7 @@
         <div class="section dark" id="about">
             <div class="container">
                 <div class="left">
-                    <h2>At the intersection of functionality & delight</h2>
+                    <h2 tabindex="0">At the intersection of functionality & delight</h2>
                 </div>
                 <div class="right">
                     <p class="about-txt">That's where you'll find me. My years of design & development experience have taught me the value of a clear, highly functional product that can scale as your business grows. 
@@ -200,13 +200,13 @@
         
         <div class="section dark" id="services">
             <div class="container">
-                <h2>What I Do</h2>
+                <h2 tabindex="0">What I Do</h2>
                 <div class="body-container">
                     <div class="left-pie">
                         <div class="expandable-container" id="designer-expandable">
                             <div class="tooltip-header">
                                 <div class="tooltip-title designer-tooltip-title"><span class="material-symbols-outlined tooltip-icon">format_color_fill</span> 40% Designer</div>
-                                <button onclick="expand('designer')" class="expand-btn"><span class="material-symbols-outlined">expand_content</span></button>
+                                <button onclick="expand('designer')" class="expand-btn button"><span class="material-symbols-outlined">expand_content</span></button>
                             </div>
 
                             <div class="expandable" id="designer-tooltip">
@@ -237,7 +237,7 @@
                         <div class="expandable-container">
                             <div class="tooltip-header">
                                 <div class="tooltip-title developer-tooltip"><span class="material-symbols-outlined tooltip-icon">devices</span> 60% Developer</div>
-                                <button onclick="expand('developer')" class="expand-btn"><span class="material-symbols-outlined">expand_content</span></button>
+                                <button onclick="expand('developer')" class="expand-btn button"><span class="material-symbols-outlined">expand_content</span></button>
                             </div>
                             <div class="expandable" id="developer-tooltip">
                                 <div class="developer-tooltip-body">
@@ -273,14 +273,14 @@
 
         <div class="section" id="portfolio">
             <div class="container">
-                <h2>Portfolio</h2>
+                <h2 tabindex="0">Portfolio</h2>
                 <div class="card-container">
                     <div class="left-navigation">
-                        <button onclick="expand('designer')" class="expand-btn left-slide"><span class="material-symbols-outlined">arrow_back</span></button>
+                        <button onclick="expand('designer')" class="expand-btn left-slide button"><span class="material-symbols-outlined">arrow_back</span></button>
                     </div>
                     <div class="carousel">
                         <div class="cards">
-                            <div class="card">
+                            <div class="card" tabindex="0">
                                 <h3>In-App Navigation</h3>
 
                                 <video onclick="this.play();"  class="portfolio-vid" id="altoDriverVideo"
@@ -289,7 +289,7 @@
                                     <source src="./assets/videos/driver-app.mp4">
                                 </video>
 
-                                <div class="project-info">Project Info <button onclick="expand('card')" class="expand-btn"><span class="material-symbols-outlined">expand_content</span></button></div>
+                                <div class="project-info">Project Info <button onclick="expand('card')" class="expand-btn button"><span class="material-symbols-outlined">expand_content</span></button></div>
 
                                 <div class="expandable" id="card-tooltip">
                                     <div class="project-description">
@@ -319,7 +319,7 @@
                                 </div>
                             </div>
 
-                            <div class="card">
+                            <div class="card" tabindex="0">
                                 <h3>Shift Scheduling Enterprise Tool</h3>
 
                                 <video onclick="this.play();"  class="portfolio-vid" id="altoShiftSchedules"
@@ -328,7 +328,7 @@
                                     <source src="./assets/videos/shift-schedules.mp4">
                                 </video>
 
-                                <div class="project-info">Project Info <button onclick="expand('card')" class="expand-btn"><span class="material-symbols-outlined">expand_content</span></button></div>
+                                <div class="project-info">Project Info <button onclick="expand('card')" class="expand-btn button"><span class="material-symbols-outlined">expand_content</span></button></div>
 
                                 <div class="expandable" id="card-tooltip">
                                     <div class="project-description">
@@ -355,7 +355,7 @@
                                 </div>
                             </div>
 
-                            <div class="card">
+                            <div class="card" tabindex="0">
                                 <h3>Website Design & Development</h3>
 
                                 <video onclick="this.play();"  class="portfolio-vid" id="dosFloresSite"
@@ -364,7 +364,7 @@
                                     <source src="./assets/videos/DosFlores.mp4">
                                 </video>
 
-                                <div class="project-info">Project Info <button onclick="expand('card')" class="expand-btn"><span class="material-symbols-outlined">expand_content</span></button></div>
+                                <div class="project-info">Project Info <button onclick="expand('card')" class="expand-btn button"><span class="material-symbols-outlined">expand_content</span></button></div>
 
                                 <div class="expandable" id="card-tooltip">
                                     <div class="project-description">
@@ -391,7 +391,7 @@
                                 </div>
                             </div>
 
-                            <div class="card">
+                            <div class="card" tabindex="0">
                                 <h3>Existing Website Enhancements</h3>
 
                                 <video onclick="this.play();"  class="portfolio-vid" id="oddPlusEvenSite"
@@ -400,7 +400,7 @@
                                     <source src="./assets/videos/OE.mp4">
                                 </video>
 
-                                <div class="project-info">Project Info <button onclick="expand('card')" class="expand-btn"><span class="material-symbols-outlined">expand_content</span></button></div>
+                                <div class="project-info">Project Info <button onclick="expand('card')" class="expand-btn button"><span class="material-symbols-outlined">expand_content</span></button></div>
 
                                 <div class="expandable" id="card-tooltip">
                                     <div class="project-description">
@@ -429,17 +429,17 @@
                     </div>
 
                     <div class="right-navigation">
-                        <button class="expand-btn right-slide"><span class="material-symbols-outlined">arrow_forward</span></button>
+                        <button class="expand-btn right-slide button"><span class="material-symbols-outlined">arrow_forward</span></button>
                     </div>
                 </div>
                 <div class="dots"></div>
                 <div class="mobile-slide-btns">
                     <div class="mobile-left-navigation">
-                        <button class="expand-btn mobile-left-btn"><span class="material-symbols-outlined">arrow_back</span></button>
+                        <button class="expand-btn mobile-left-btn button"><span class="material-symbols-outlined">arrow_back</span></button>
                     </div>
 
                     <div class="mobile-right-navigation">
-                        <button class="expand-btn mobile-right-btn"><span class="material-symbols-outlined">arrow_forward</span></button>
+                        <button class="expand-btn mobile-right-btn button"><span class="material-symbols-outlined">arrow_forward</span></button>
                     </div>
                 </div>
               </div>
@@ -447,7 +447,7 @@
 
         <div class="section dark" id="testimonials">
             <div class="container">
-                <h2>What's the Buzz?</h2>
+                <h2 tabindex="0">What's the Buzz?</h2>
                 <div class="testimonials-container">
                     <div class="testimonial">
                         <div class="image">
@@ -516,10 +516,10 @@
                     <img class="headshot" src="./assets/imgs/testimonial-headshots/headshot.jpg" alt="">
                 </div>
                 <div class="contact-container">
-                    <h2>Wanna, like, hang out?</h2>
+                    <h2 tabindex="0">Wanna, like, hang out?</h2>
                     <div class="contact-btns">
                         <a href="https://www.linkedin.com/in/caitlineelliott/" target="_blank">
-                            <button>
+                            <button class="button">
                                 <div class="btn-label">
                                     <img src="./assets/imgs/linkedin.png" class="linkedin-logo" alt="">
                                     LinkedIn
@@ -528,7 +528,7 @@
                         </a>
         
                         <a href="./assets/docs/resume.pdf" download>
-                            <button>
+                            <button class="button">
                                 <div class="btn-label">
                                     <span class="material-symbols-outlined">
                                         download
@@ -541,7 +541,7 @@
                         </a>      
     
                         <a href="mailto:ceelliott90@gmail.com">
-                            <button>
+                            <button class="button">
                                 <div class="btn-label">
                                     <span class="material-symbols-outlined">
                                         send
