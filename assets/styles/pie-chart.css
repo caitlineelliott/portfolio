@@ -104,122 +104,13 @@
     min-width: 250px;
 }
 
-/* 
-
-/*
-
-
-.left-pie,
-.right-pie {
-    z-index: 2;
-}
-
-
-.pie-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-
-
-
-  .body-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.left-pie {
-    position: initial;
-}
-
-.right-pie {
-    position: initial;
-} */
-
-/* .body-container {
-    width: 100%;
-    margin: 50px 0;
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-
-
-
-.pie-chart {
-    min-width: 500px;
-    min-height: 500px;
-    width: 35vw; 
-    height: 35vw;
-    border-radius: 50%;
-    background: var(--green);
-    background-image:
-    linear-gradient(to right, transparent 50%, var(--beige) 0);
-    border: 3px solid var(--black);
-    box-shadow: 1px 1px 0px 0px var(--black), 2px 2px 0px 0px var(--black), 3px 3px 0px 0px var(--black), 4px 4px 0px 0px var(--black), 5px 5px 0px 0px var(--black);
-  }
-  
-  .pie-chart::before {
-    content: "";
-    display: block;
-    margin-left: 50%;
-    height: 100%;
-    border-radius: 0 100% 100% 0 / 50%;
-    background: var(--beige);
-    transform-origin: left;
-    transform: rotate(.1turn);
-  }
-
-/* TOOLTIPS */
-
-
-
-/*
-
-
-@media screen and (max-width: 480px) {
-    .body-container {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .pie-chart {
-        min-width: 300px;
-        min-height: 300px;
-    }
-
-    .left-pie {
-        position: initial;
-    }
-
-    .right-pie {
-        position: initial;
-    }
-    
+ @media screen and (max-width: 768px) {    
     .expandable-container {
-        min-width: 300px;
+        min-width: 325px;
     }
 
-    .expand-btn {
-        min-width: 50px;
-    }
-  }
-
-
- */
-
- @media screen and (min-width: 431px) and (max-width: 768px) {    
-    .expandable-container {
-        min-width: 300px;
+    .tooltip-header {
+        height: 5vh;
     }
 
     .expand-btn {

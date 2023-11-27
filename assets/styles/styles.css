@@ -7,21 +7,6 @@
 @import url('./header.css');
 @import url('./pie-chart.css');
 
-.company-logos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 100%;
-    margin: 40px 0;
-    gap: 20px;
-}
-
-.company-logos > * {
-    height: 4vh;
-    object-fit: contain;
-    filter: grayscale(100%) invert(0.5) contrast(1);
-}
-
 .headshot-container {
     max-width: 20vw;
     min-width: 325px;
@@ -63,7 +48,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
-    margin: 40px 0;
+    margin-top: 40px;
     gap: 20px;
 }
 
