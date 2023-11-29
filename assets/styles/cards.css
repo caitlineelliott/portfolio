@@ -8,7 +8,12 @@
     margin: 20px 0;
 }
 
-video {
+.project-description {
+    padding-bottom: 20px;
+}
+
+video,
+.portfolio-vid {
     height: inherit;
     width: 100%;
     background-color: var(--black);
@@ -21,7 +26,7 @@ li {
     color: var(--black);
 }
 
-.project-description span {
+.project-description span:not('.material-symbols-outlined') {
     font-weight: 700;
     color: var(--green);
 }
@@ -91,6 +96,8 @@ video:hover {
 .project-info {
     background-color: var(--beige);
     border-radius: 20px;
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -155,10 +162,6 @@ video:hover {
         align-items: flex-start;
     }
 
-    .project-info {
-        width: 95%;
-    }
-
     .card-container {
         width: 90%;
     }
@@ -171,14 +174,10 @@ video:hover {
     
     .card {
         min-width: 28vw;
-        padding: 40px;
+        padding: 30px 30px 10px 30px;
         display: flex;
         justify-content: center;
         align-items: flex-start;
-    }
-
-    .project-info {
-        width: 95%;
     }
 
     .card-container {
